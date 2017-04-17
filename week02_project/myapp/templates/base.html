@@ -1,0 +1,29 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">MyGallery</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/person/">Profile</a></li>
+          <li><a href="/gallery/">Gallery</a></li>
+          <li><a href="/session/">Test Session</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+
+
+          {% block content %}
+          {% endblock %}
+        
+    </div>
+  </body>
+</html>

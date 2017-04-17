@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<!--<style >
+	img {
+		margin-left: 70px;
+		padding-bottom: 50px;
+	}
+	p{
+ 		text-decoration: underline;
+	}
+</style>-->
+    <p style="text-align:center; font-size:50px;">My gallery</p>
+			<div class="col-sm-1"></div>
+		  <div class="col-sm-10">
+				{% for i in images %}
+
+				<a href="{% url 'getSession' i.id%}">
+          <img src="{{i.image.url}}" style="width:150px;heigth:150px;"> </img>
+        </a>
+		    {% endfor %}
+			</div>
+			<div class="col-sm-1"></div>
+
+
+{% endblock %}
